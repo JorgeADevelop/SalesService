@@ -69,7 +69,7 @@ Base.metadata.create_all(engine)
 
 
 @app.route('/sales', methods=['GET'])
-def index():
+def indexSales():
     try:
         offset = app.current_request.query_params.get("offset", 0)
         limit = app.current_request.query_params.get("limit", 10)
